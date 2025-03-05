@@ -113,6 +113,48 @@
             border: 2px solid white;
             font-weight: bold;
         }
+        .nav3{
+            background-color: #4d525a;
+            padding: 10px;
+        }
+        .nav3 ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .nav3 a{
+            text-decoration: none;
+            color:#ffffff;
+            padding: 10px;
+            display: block;
+        }
+        .nav3 .dropdown-content{
+            display: none;
+            
+        }
+        .nav3 .dropdown:hover .dropdown-content{
+            display: block;
+            position:absolute;
+            background-color: #303031;
+            min-width: 150px;
+        }
+        .nav3 .dropdown-content a:hover{
+            background-color: #404040;
+            border-radius: 15px;
+        }
+        .nav3 .login-btn{
+             background-color: #2d3ba8;
+        }
+        .nav3 .login-btn:hover{
+            background-color: #252528;
+            color: #fff;
+            box-shadow: 5px 5px #3d403d;
+            border: 2px solid white;
+            font-weight: bold;
+        }
 
     </style>
 </head>
@@ -145,8 +187,14 @@
             <nav class="nav3">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li class="dropdown"><a href="#">About</a></li>
-                    <div class="dropdown-content"><a href="#">Ouer Story</a></div>
+                    <li class="dropdown">
+                        <a href="#">About</a>
+                    <div class="dropdown-content">
+                        <a href="#">Ouer Story</a>
+                        <a href="#">Team</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    </li>
                     <li><a href="#">product</a></li>
                     <li>
                         <button class="login-btn">login</button>
