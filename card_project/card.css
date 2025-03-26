@@ -83,6 +83,12 @@ body{
     margin: 0 8px;
     background-color: #4070f4;
     color: #fff;
+    opacity: 0.5;
+    transition: all 0.3 ease-in-out;
+}
+.media-link .link:hover{
+    opacity: 1;
+    transform: scale(1.2);
 }
 .profile-card .buttons{
     display: flex;
